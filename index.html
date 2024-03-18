@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOLD Signal Simulation</title>
+    <style>
+    .plots-container {
+    display: flex;
+    justify-content: space-around;
+    }
+
+    .plot {
+       width: 50%;
+       height: 400px;
+       background-color: #f0f0f0;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       margin-top: 20px;
+    }
+</style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="updateBoldPlot.js"></script> -->
+    <!-- <script src="updateResidualsPlot.js"></script> -->
+</head>
+<body>
+    
+    <div style="margin: 50px;">
+        <label for="intercept"> Beta0:</label>
+        <input type="range" id="intercept" min="-40" max="50" value="-40" step="0.5">
+        <span id="interceptValue">-40</span>
+
+        <label for="amplitude"> Beta1:</label>
+        <input type="range" id="amplitude" min="0" max="2" value="0.21" step="0.001">
+        <span id="amplitudeValue">0.21</span>
+
+        <p>MSE: <span id="mseValue">N/A</span></p>
+        <div class="plots-container">
+        <div class="plot" id="boldPlotContainer">
+        <canvas id="BoldPlot"></canvas>
+        </div>
+        <div class="plot" id="residualsPlotContainer">
+        <canvas id="residualsPlot"></canvas>
+    </div>
+</div> 
+      <script src="final_interactive_BOLDfit.js"></script>
+
+</body>
+</html>
