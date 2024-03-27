@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fMRI BOLD High Pass Filter Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+    <h2>fMRI BOLD High Pass Filter Demonstration</h2>
+<label for="cutoffFrequency">Cutoff Frequency:</label>
+<input type="range" id="cutoffFrequency" min="0.001" max="1" value="0.1" step="0.001">
+<span id="cutoffValue">0.1</span>
+<canvas id="boldSignalChart"></canvas>
+
+
+    <script src="tutorial.js"></script> <!-- This will be our JavaScript file -->
+</body>
+</html>
