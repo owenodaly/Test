@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shape Alignment Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas" width="600" height="400"></canvas>
+    <div id="controls">
+        <label for="moveX">Move X:</label>
+        <input type="range" id="moveX" min="-300" max="300" value="0">
+        <label for="moveY">Move Y:</label>
+        <input type="range" id="moveY" min="-200" max="200" value="0">
+        <label for="rotate">Rotate:</label>
+        <input type="range" id="rotate" min="0" max="360" value="0">
+        <button id="hideShapes">Hide Shapes</button>
+    </div>
+    <div id="mseDisplay">MSE: <span id="mseValue">0</span></div>
+    <script src="script.js"></script>
+</body>
+</html>
